@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Yoga Science Council | Standalone Hub</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        council: {
+                            blue: '#1A2B3C',
+                            gold: '#D4AF37',
+                            goldLight: '#E5C76B',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Crimson Text"', 'serif'],
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        .pillar-card:hover .pillar-accent {
+            transform: scale(1.5);
+        }
+        .pillar-accent {
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-council-blue">
+
+    <!-- Navigation -->
+    <nav class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-council-blue rounded-full flex items-center justify-center border-2 border-council-gold">
+                    <span class="text-council-gold font-serif font-bold text-xl">IYSC</span>
+                </div>
+                <span class="font-serif font-bold text-xl tracking-tight hidden md:block">International Yoga Science Council</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#home" class="text-council-blue font-medium hover:text-council-gold transition-colors text-sm uppercase tracking-wider">Home</a>
+                <a href="#ecosystem" class="text-council-blue font-medium hover:text-council-gold transition-colors text-sm uppercase tracking-wider">Ecosystem</a>
+                <a href="#governance" class="text-council-blue font-medium hover:text-council-gold transition-colors text-sm uppercase tracking-wider">Governance</a>
+                <button class="bg-council-blue text-white px-6 py-2 rounded-full font-semibold text-sm hover:bg-opacity-90 transition-all border border-council-gold flex items-center gap-2">
+                    <i data-lucide="user" class="w-4 h-4 text-council-gold"></i>
+                    Member Login
+                </button>
+            </div>
+            <button class="md:hidden text-council-blue">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[90vh] flex items-center pt-10 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-slate-100 -z-10 hidden lg:block"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-council-gold/10 border border-council-gold/20 text-council-gold font-semibold text-xs uppercase tracking-widest mb-6">
+                    <i data-lucide="globe" class="w-3.5 h-3.5"></i>
+                    Global Academic Standard
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-council-blue leading-tight mb-6">
+                    Validating Ancient Wisdom through <span class="text-council-gold">Empirical Rigor.</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-10 leading-relaxed max-w-xl">
+                    The global standard for IKS research, grassroots delivery, and biofeedback innovation. Bridging the gap between traditional practice and modern scientific validation.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button class="bg-council-blue text-white px-8 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group">
+                        Explore Research
+                        <i data-lucide="chevron-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <button class="bg-white text-council-blue border-2 border-council-blue px-8 py-4 rounded-full font-bold text-lg hover:bg-slate-50 transition-all">
+                        Join the Council
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1200" alt="Yoga Research" class="w-full h-[500px] object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-[200px]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <i data-lucide="cpu" class="w-5 h-5 text-council-gold"></i>
+                        <span class="font-bold text-sm">Biofeedback</span>
+                    </div>
+                    <p class="text-xs text-slate-500">Real-time physiological monitoring during meditative states.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecosystem Section -->
+    <section id="ecosystem" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-council-gold font-sans font-bold tracking-widest uppercase text-sm mb-4">The Three Pillars</h2>
+                <h3 class="text-4xl font-serif font-bold text-council-blue mb-6">Our Ecosystem</h3>
+                <div class="w-24 h-1 bg-council-gold mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
+                <div class="pillar-card relative group bg-white rounded-3xl p-8 shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                    <div class="pillar-accent absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full -z-10 transition-transform duration-500"></div>
+                    <div class="p-4 bg-white rounded-2xl shadow-md inline-block mb-6 border border-slate-50">
+                        <i data-lucide="book-open" class="w-8 h-8 text-council-gold"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-council-blue mb-1">Academic & Research</h4>
+                    <p class="text-council-gold font-semibold text-sm uppercase tracking-wider mb-6">The Knowledge Engine</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        Generate high-quality, peer-reviewed evidence for Yoga's efficacy through rigorous scientific inquiry.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> Journal of Yoga Science</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> UGC-Aligned Curriculum</li>
+                    </ul>
+                </div>
+                <!-- Pillar 2 -->
+                <div class="pillar-card relative group bg-white rounded-3xl p-8 shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                    <div class="pillar-accent absolute top-0 right-0 w-32 h-32 bg-amber-50 rounded-bl-full -z-10 transition-transform duration-500"></div>
+                    <div class="p-4 bg-white rounded-2xl shadow-md inline-block mb-6 border border-slate-50">
+                        <i data-lucide="users" class="w-8 h-8 text-council-gold"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-council-blue mb-1">Grassroots & Community</h4>
+                    <p class="text-council-gold font-semibold text-sm uppercase tracking-wider mb-6">The Delivery Engine</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        Scale Yoga delivery to rural and underserved populations through community-led health initiatives.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> Multilingual Media Library</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> ASHA Worker Training</li>
+                    </ul>
+                </div>
+                <!-- Pillar 3 -->
+                <div class="pillar-card relative group bg-white rounded-3xl p-8 shadow-sm border border-slate-100 overflow-hidden transition-all duration-500 hover:shadow-2xl">
+                    <div class="pillar-accent absolute top-0 right-0 w-32 h-32 bg-slate-50 rounded-bl-full -z-10 transition-transform duration-500"></div>
+                    <div class="p-4 bg-white rounded-2xl shadow-md inline-block mb-6 border border-slate-50">
+                        <i data-lucide="cpu" class="w-8 h-8 text-council-gold"></i>
+                    </div>
+                    <h4 class="text-2xl font-bold text-council-blue mb-1">Technology & Analytics</h4>
+                    <p class="text-council-gold font-semibold text-sm uppercase tracking-wider mb-6">The Nervous System</p>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        Leverage AI and biofeedback for personalized wellness and data-driven insights into human physiology.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm font-medium text-slate-700">
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> AI Yoga Biofeedback</li>
+                        <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-council-gold"></div> Health Data Pipelines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance Section -->
+    <section id="governance" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-council-gold font-sans font-bold tracking-widest uppercase text-sm mb-4">Leadership</h2>
+                <h3 class="text-4xl font-serif font-bold text-council-blue mb-6">Executive Governance</h3>
+                <div class="w-24 h-1 bg-council-gold mx-auto rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Leader 1 -->
+                <div class="group bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-500">
+                    <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                        <div class="relative shrink-0">
+                            <div class="w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-lg">
+                                <img src="assets/patron.jpg" alt="Dr. I.V. Basavareddi" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                            <div class="absolute -bottom-3 -right-3 bg-council-blue p-2 rounded-xl border-2 border-white shadow-md">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-council-gold"></i>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h4 class="text-2xl font-bold text-council-blue mb-1">Dr. I.V. Basavareddi</h4>
+                            <p class="text-council-gold font-semibold text-sm uppercase tracking-wider mb-4">Patron-in-Chief</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Eminent scholar and visionary leader in the field of Yoga Science. Former Director of MDNIY, Ministry of AYUSH, Govt. of India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Leader 2 -->
+                <div class="group bg-slate-50 rounded-3xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-500">
+                    <div class="flex flex-col md:flex-row gap-8 items-center md:items-start">
+                        <div class="relative shrink-0">
+                            <div class="w-32 h-32 rounded-2xl overflow-hidden border-4 border-white shadow-lg">
+                                <img src="assets/satyam.jpg" alt="Satyam Tiwari" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" onerror="this.src='https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400'">
+                            </div>
+                            <div class="absolute -bottom-3 -right-3 bg-council-blue p-2 rounded-xl border-2 border-white shadow-md">
+                                <i data-lucide="award" class="w-6 h-6 text-council-gold"></i>
+                            </div>
+                        </div>
+                        <div class="text-center md:text-left">
+                            <h4 class="text-2xl font-bold text-council-blue mb-1">Satyam Tiwari</h4>
+                            <p class="text-council-gold font-semibold text-sm uppercase tracking-wider mb-4">Founder & President</p>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Architect of the IYSC framework, dedicated to integrating traditional Indian Knowledge Systems with modern empirical research methodologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-council-blue text-white py-12 border-t border-council-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center gap-3 mb-6">
+                <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center border border-council-gold">
+                    <span class="text-council-gold font-serif font-bold text-sm">IYSC</span>
+                </div>
+                <span class="font-serif font-bold text-lg">International Yoga Science Council</span>
+            </div>
+            <p class="text-slate-400 text-sm mb-8 max-w-lg mx-auto">
+                Registered under Section 8 of the Companies Act, 2013. Validating ancient wisdom through empirical rigor.
+            </p>
+            <div class="flex justify-center gap-8 text-slate-500 text-xs uppercase tracking-widest">
+                <a href="#" class="hover:text-council-gold transition-colors">Privacy Policy</a>
+                <a href="#" class="hover:text-council-gold transition-colors">Terms of Service</a>
+                <a href="#" class="hover:text-council-gold transition-colors">Contact Us</a>
+            </div>
+            <div class="mt-8 pt-8 border-t border-white/5 text-slate-500 text-[10px]">
+                &copy; 2024 International Yoga Science Council. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
